@@ -52,6 +52,10 @@ This indicates a **serious security vulnerability** that should be addressed imm
 
 ---
 
+**⚒️ Tool used:** [vulnerability-scanner-claude](https://github.com/karan-verma-x/vulnerability-scanner-claude) — full-stack scanner that crawls public `http(s)` pages, collects linked and inline JavaScript (static crawl), runs heuristic checks, and can draft Markdown security reports via the Anthropic API (key stays on the server).
+
+--
+
 ## 📦 What was recovered
 
 **Total recovered application size:** `593,277 bytes`
