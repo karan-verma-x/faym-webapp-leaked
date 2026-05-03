@@ -26,6 +26,32 @@ Vulnerability testing was performed on **both stacks** listed above.
 
 ---
 
+## 🛠 Build
+
+```sh
+npm i
+npm start
+```
+
+---
+
+## 🚀 Local run & security note
+
+Once the project is running locally, authentication tokens can be retrieved from the application.
+
+These tokens may allow **authorized API requests** to:
+
+* https://backend.faym.co
+
+If backend validation is weak or misconfigured, this may lead to:
+
+* Privilege escalation
+* Unauthorized access to admin-level roles
+
+This indicates a **serious security vulnerability** that should be addressed immediately.
+
+---
+
 ## 📦 What was recovered
 
 **Total recovered application size:** `593,277 bytes`
@@ -58,32 +84,6 @@ src/
 ├── reportWebVitals.tsx
 └── index.tsx
 ```
-
----
-
-## 🛠 Build
-
-```sh
-npm i
-npm start
-```
-
----
-
-## 🚀 Local run & security note
-
-Once the project is running locally, authentication tokens can be retrieved from the application.
-
-These tokens may allow **authorized API requests** to:
-
-* https://backend.faym.co
-
-If backend validation is weak or misconfigured, this may lead to:
-
-* Privilege escalation
-* Unauthorized access to admin-level roles
-
-This indicates a **serious security vulnerability** that should be addressed immediately.
 
 ---
 
