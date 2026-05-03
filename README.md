@@ -1,17 +1,34 @@
 # Faym frontend leaked — rebuilt from public source map
 
-This tree is the original Faym CRA project leaked **reconstructed** 
+## 🎯 Targets
 
-**Targets — Faym:** `https://faym.co`, `https://www.faym.co`, `https://deals.faym.co` (production frontend) and `https://backend.faym.co` (production API)  
-**Targets — Lehlah:** `https://app.lehlah.club`, `https://creator.lehlah.club`
+### Faym (creator platform)
 
-Vulnerability testing was performed on **both** stacks above. Full write-up for Lehlah (XSS + same-site CSRF): [lehlah-xss-report.md](lehlah-xss-report.md).
+* https://faym.co
+* https://www.faym.co
+* https://deals.faym.co *(production frontend)*
+* https://backend.faym.co *(production API)*
+
+### Lehlah (creator platform)
+
+* https://app.lehlah.club
+* https://creator.lehlah.club
+
+### Wishlink (creator platform)
+* https://creator.wishlink.com
 
 ---
 
-## What was recovered
+Vulnerability testing was performed on **both stacks** listed above.
 
-Total recovered application bytes: **593,277**.
+📄 Full write-up for Lehlah (XSS + same-site CSRF):
+https://lehlah-xss-report.md
+
+---
+
+## 📦 What was recovered
+
+**Total recovered application size:** `593,277 bytes`
 
 ```
 src/
@@ -42,13 +59,32 @@ src/
 └── index.tsx
 ```
 
-## Build
+---
+
+## 🛠 Build
 
 ```sh
 npm i
 npm start
 ```
 
-## Local run
+---
 
-Once the project is running locally, you can retrieve authentication tokens from the application. These tokens can then be used to make authorized API requests. In some cases, improper validation or misconfiguration may allow privilege escalation. This could enable access with admin-level roles without proper authorization checks. Such behavior highlights a potential security vulnerability that should be addressed.
+## 🚀 Local run & security note
+
+Once the project is running locally, authentication tokens can be retrieved from the application.
+
+These tokens may allow **authorized API requests** to:
+
+* https://backend.faym.co
+
+If backend validation is weak or misconfigured, this may lead to:
+
+* Privilege escalation
+* Unauthorized access to admin-level roles
+
+This indicates a **serious security vulnerability** that should be addressed immediately.
+
+---
+
+⚠️ **Responsible disclosure recommended** before any public exposure.
