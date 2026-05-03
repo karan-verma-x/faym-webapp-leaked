@@ -1,4 +1,4 @@
-# Faym frontend leaked — rebuilt from public source map
+# Faym & Lehlah frontend leaked — rebuilt from public source map
 
 ## 🎯 Targets
 
