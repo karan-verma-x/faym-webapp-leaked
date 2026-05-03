@@ -22,7 +22,7 @@
 Vulnerability testing was performed on **both stacks** listed above.
 
 📄 Full write-up for Lehlah (XSS + same-site CSRF):
-https://lehlah-xss-report.md
+[lehlah-xss-report.md](https://github.com/karan-verma-x/faym-webapp-leaked/blob/master/lehlah-xss-report.md)
 
 ---
 
